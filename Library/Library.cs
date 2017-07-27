@@ -10,9 +10,9 @@ public class Library : IEnumerable<Book>
 {
     public Library(params Book[] books)
     {
-        this.books = new List<Book>(books);
+        this.books = new SortedSet<Book>(books);
     }
-    private List<Book> books { get; set; }
+    private SortedSet<Book> books { get; set; }
 
     public IEnumerator<Book> GetEnumerator()
     {
