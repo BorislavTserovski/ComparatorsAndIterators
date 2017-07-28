@@ -14,7 +14,7 @@ namespace Froggy
                .Select(int.Parse).ToList();
             Lake lake = new Lake(input);
 
-           Console.WriteLine(string.Join(", ",lake));
+            Console.WriteLine(string.Join(", ",lake));
 
        }
     }
